@@ -41,7 +41,7 @@ iface = gr.Interface(
     fn=predict,
     inputs=gr.Image(label="上传一张图片来猜猜看！"),
     outputs=gr.Label(num_top_classes=3, label="电脑的猜测结果"),
-    title="屿的'猜猜看'小游戏",
+    title="'猜猜看'小游戏",
     description="这是一个基于CIFAR-10数据集训练的图像分类器。"
 )
 
