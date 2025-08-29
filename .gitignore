@@ -1,0 +1,14 @@
+# Python 缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+
+# IDE 和操作系统产生的配置文件
+.vscode/
+.idea/
+.DS_Store
+
+/data/
