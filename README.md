@@ -16,17 +16,12 @@
 
 
 **1. Gradio 交互界面**
-*(在这里放入你的 `app.py` 运行后的网页截图)*
 ![Gradio应用界面](assets/gradio_demo.png)
-
 **2. MiniVGG 和CNN模型学习曲线**
-*(在这里放入你训练后生成的学习曲线图片)*
 ![MiniVGG学习曲线](assets/minivgg_curve_005.png)
 ![CNN学习曲线](assets/cnn_curve_004.png)
 **3. 一键启动脚本**
-*(在这里放入你运行 `.bat` 脚本的终端截图)*
 ![一键启动脚本](assets/bat_script_demo.png)
-
 
 ## 🚀 如何使用 (Usage)
 
@@ -50,3 +45,38 @@ conda activate cnn_env
 
 # 训练 MiniVGG 模型 30 个周期
 python CNN.PY --model MiniVGG --mode train --epochs 30
+
+```
+### 3. 评估模型
+在 `scripts` 文件夹中，双击对应的 `.bat` 脚本即可。例如，双击 **`评估MiniVGG.bat`** 来评估 `MiniVGG` 模型的性能。
+
+你也可以在激活环境后，通过命令行手动运行，以进行更精细的控制：
+```bash
+# 激活环境
+conda activate cnn_env
+
+# 评估 MiniVGG 模型
+python CNN.PY --model MiniVGG --mode eval
+
+```
+
+### 4. 启动 Gradio 应用
+双击 launch_game.bat 脚本。程序启动后，请在浏览器中打开提示的本地网址 (通常是 http://127.0.0.1:7860)。
+
+## 技术栈 (Tech Stack)
+-核心框架: Python, PyTorch
+
+-Web应用: Gradio, FastAPI
+
+-数据处理: NumPy, Pillow
+
+-可视化: Matplotlib
+
+-环境管理: Conda
+
+## 📚 参考资料 (References)
+- [PyTorch官方文档](https://pytorch.org/docs/stable/index.html)
+- [Gradio官方文档](https://www.gradio.app/docs)
+- [FastAPI官方文档](https://fastapi.tiangolo.com/)
+## 📝 许可证 (License)
+本项目遵循 MIT 许可证。请查看 `LICENSE` 文件了解更多信息。
