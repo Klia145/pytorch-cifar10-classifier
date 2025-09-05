@@ -9,7 +9,7 @@ call conda activate cnn_env
 REM 
 IF %ERRORLEVEL% NEQ 0 (
     echo.
-    echo !!! 错误: 无法激活 Conda 环境 'neuopt'。 !!!
+    echo !!! 错误: 无法激活 Conda 环境 'cnn_env'。 !!!
     echo !!! 请确保你已经正确安装 Anaconda/Miniconda 并且环境存在。!!!
     echo.
     pause
